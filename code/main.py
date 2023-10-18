@@ -1,13 +1,14 @@
-import nlp_final_textrank as f
-import nlp_final_lexrank as f1
+import textrank as f
+import lexrank as f1
 from stops import stops_new as stops
 import pandas as pd
-fl = '/home/manjaro/Desktop/python/nlp_final/data/imedi_news.xlsx'
-fl_write = '/home/manjaro/Desktop/python/nlp_final/data/imedi_news_summ.xlsx'
-fl_write1 = '/home/manjaro/Desktop/python/nlp_final/data/imedi_news_summ_diff.xlsx'
-fl_write2 = '/home/manjaro/Desktop/python/nlp_final/data/imedi_news_summ_same.xlsx'
-fl_write3 = '/home/manjaro/Desktop/python/nlp_final/data/imedi_news_summ_diff_lex.xlsx'
 
+
+fl = '/home/data/imedi_news.xlsx'
+fl_write = '/home/data/imedi_news_summ.xlsx'
+fl_write1 = '/home/data/imedi_news_summ_diff.xlsx'
+fl_write2 = '/home/data/imedi_news_summ_same.xlsx'
+fl_write3 = '/home/data/imedi_news_summ_diff_lex.xlsx'
 
 df = pd.read_excel(fl)
 st = df['სტატია']
